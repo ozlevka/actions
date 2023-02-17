@@ -1,0 +1,14 @@
+name: "My First python docker action"
+description: "This is my first python docker action"
+
+inputs:
+  python-command:
+    description: "The python command to run"
+    required: true
+    default: "print('Hello World')"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+  - ${{ inputs.python-command }}
