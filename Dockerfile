@@ -7,4 +7,4 @@ RUN apt-get update \
     && pip install requests 
 
 
-ENTRYPOINT [ "python" ]
+ENTRYPOINT [ "python", "-c" ]
