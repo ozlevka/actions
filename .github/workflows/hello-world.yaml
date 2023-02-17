@@ -1,4 +1,4 @@
-name: "My First Action"
+name: "My First Wrtited docker Action"
 
 on: 
   push:
@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Hello World"
-        run: echo "Hello World" 
+        uses: ozlevka/actions@test-action
+        with:
+          python-command: "print('Here we run the python command')"
