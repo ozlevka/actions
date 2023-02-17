@@ -12,4 +12,4 @@ jobs:
       - name: "Hello World"
         uses: ozlevka/actions@test-action
         with:
-          python-command: "print('Here we run the python command')"
+          python-command: python -c "print('Here we run the python command')"
